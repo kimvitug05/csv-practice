@@ -18,7 +18,7 @@ def total_medals_per_team(olympic_data)
 end
 
 def get_all_gold_medalists(olympic_data)
-
+  return olympic_data.filter { |athlete| athlete['Medal'] == 'Gold' }
 end
 
 
